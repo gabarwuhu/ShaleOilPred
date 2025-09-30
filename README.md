@@ -1,20 +1,15 @@
 # ShaleOil-VA-RF
 Code for shale oil production prediction and sweet spot evaluation using Variance-Adaptive Random Forest (VA-RF)
+
 ## Features
-
-Implements Variance-Adaptive Random Forest (VA-RF): dynamically balances node split randomness with variance information to improve model stability and accuracy.
-
-Includes Random Forest (RF) and Fixed-Probability RF (FPRF) as baselines for comparison.
-
-Uses Bayesian Optimization (BayesSearchCV) for automatic hyperparameter tuning.
-
-Employs Nested K-Fold Cross-Validation (outer folds for evaluation, inner folds for tuning) to ensure robust performance.
-
-Provides theoretical validation with tree strength and inter-tree correlation analysis.
-
-Supports multiple evaluation metrics: Root Mean Squared Error (RMSE) and Mean Absolute Error (MAE).
-
-Includes a sample dataset (Github示例数据.xlsx) with well names, geological/engineering features, and production targets for quick testing.
+- Implements **Variance-Adaptive Random Forest (VA-RF)**: dynamically adjusts the split probability based on variance to balance tree strength and diversity, improving prediction stability under small-sample conditions.  
+- Includes **Random Forest (RF)** and **Fixed-Probability RF (FPRF)** as baselines for comparison.  
+- Uses **Bayesian Optimization** (`BayesSearchCV`) for automatic hyperparameter tuning.  
+- Employs **Nested K-Fold Cross-Validation** (outer folds for evaluation, inner folds for tuning) to ensure robust generalization.  
+- Provides **theoretical validation** with analysis of **tree strength** and **inter-tree correlation**.  
+- Supports multiple evaluation metrics: **Root Mean Squared Error (RMSE)** and **Mean Absolute Error (MAE)**.  
+- Outputs results as **CSV files**, including per-fold errors and theoretical validation tables.  
+- Includes a **sample dataset** (`Github示例数据.xlsx`) for quick testing.  
 
 ##Dataset
 The repository provides a simple example dataset:
