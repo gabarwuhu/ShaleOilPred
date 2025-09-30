@@ -11,18 +11,16 @@ Code for shale oil production prediction and sweet spot evaluation using Varianc
 - Outputs results as **CSV files**, including per-fold errors and theoretical validation tables.  
 - Includes a **sample dataset** (`Github示例数据.xlsx`) for quick testing.  
 
-##Dataset
-The repository provides a simple example dataset:
+## Dataset
 
-File: Github-data.xlsx
+- The repository provides a simple example dataset:
+- File: Github-data.xlsx
 
-##Format:
+## Format:
 
-First column → well names (not used in training).
-
-Middle columns → geological/engineering features.
-
-Last column → target variable.
+- First column → well names (not used in training).
+- Middle columns → geological/engineering features.
+- Last column → target variable.
 
 ## Installation
 Ensure you have Python 3.12 installed. You can install the required dependencies using:
