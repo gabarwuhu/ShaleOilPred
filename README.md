@@ -1,20 +1,32 @@
 # ShaleOil-VA-RF
 Code for shale oil production prediction and sweet spot evaluation using Variance-Adaptive Random Forest (VA-RF)
 ## Features
+
 Implements Variance-Adaptive Random Forest (VA-RF): dynamically balances node split randomness with variance information to improve model stability and accuracy.
+
 Includes Random Forest (RF) and Fixed-Probability RF (FPRF) as baselines for comparison.
+
 Uses Bayesian Optimization (BayesSearchCV) for automatic hyperparameter tuning.
+
 Employs Nested K-Fold Cross-Validation (outer folds for evaluation, inner folds for tuning) to ensure robust performance.
+
 Provides theoretical validation with tree strength and inter-tree correlation analysis.
+
 Supports multiple evaluation metrics: Root Mean Squared Error (RMSE) and Mean Absolute Error (MAE).
+
 Includes a sample dataset (Github示例数据.xlsx) with well names, geological/engineering features, and production targets for quick testing.
 
 ##Dataset
 The repository provides a simple example dataset:
+
 File: Github-data.xlsx
+
 ##Format:
+
 First column → well names (not used in training).
+
 Middle columns → geological/engineering features.
+
 Last column → target variable.
 
 ## Installation
