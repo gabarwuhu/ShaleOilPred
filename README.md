@@ -12,22 +12,36 @@ Code for shale oil production prediction and sweet spot evaluation using Varianc
 - Includes a **sample dataset** (`Github示例数据.xlsx`) for quick testing.  
 
 ## Dataset
-
 - The repository provides a simple example dataset:
 - File: Github-data.xlsx
 
 ## Format:
-
 - First column → well names (not used in training).
 - Middle columns → geological/engineering features.
 - Last column → target variable.
 
 ## Installation
-Ensure you have Python 3.12 installed. You can install the required dependencies using:
+Ensure you have Python 3.12 installed. 
 
+## Dependencies
+The project requires the following Python libraries:
+## Dependencies
+The project requires the following Python libraries:
+
+- **numpy** – numerical operations  
+- **pandas** – data handling and Excel/CSV I/O  
+- **scikit-learn** – machine learning framework (imputation, pipelines, models, metrics, cross-validation)  
+- **scikit-optimize** – Bayesian hyperparameter optimization (`BayesSearchCV`)  
+- **dataclasses** – for structured result storage (Python 3.7+ built-in)  
+- **typing** – for type hints (Python standard library)  
+- **warnings** – for suppressing warnings during training (Python standard library)  
+
+*(Optional)*  
+- **numba** – accelerate numerical computation (if you want faster low-level operations)  
+
+### Install all dependencies
 ```bash
-pip install numpy pandas scikit-learn scikit-optimize numba
-```
+pip install numpy pandas scikit-learn scikit-optimize
 
 ## Usage
 Run the main script to perform shale oil production prediction:
@@ -35,15 +49,4 @@ Run the main script to perform shale oil production prediction:
 ```bash
 VA-RF.py
 ```
-
-Modify hyperparameters or adjust K-Fold settings in the script as needed.
-
-## Dependencies
-The project requires the following Python libraries:
-- `numpy`
-- `pandas`
-- `scikit-learn`
-- `scikit-optimize`
-- `numba`
-
 
