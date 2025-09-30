@@ -9,7 +9,7 @@ Code for shale oil production prediction and sweet spot evaluation using Varianc
 - Provides **theoretical validation** with analysis of **tree strength** and **inter-tree correlation**.  
 - Supports multiple evaluation metrics: **Root Mean Squared Error (RMSE)** and **Mean Absolute Error (MAE)**.  
 - Outputs results as **CSV files**, including per-fold errors and theoretical validation tables.  
-- Includes a **sample dataset** (`Github示例数据.xlsx`) for quick testing.  
+- Includes a **sample dataset** (`Github-Data.xlsx`) for quick testing.  
 
 ## Dataset
 - The repository provides a simple example dataset:
